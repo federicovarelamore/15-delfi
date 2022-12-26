@@ -12,7 +12,7 @@ if (navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
 }
 
 ////  Cuenta regresiva
-var fechaCuentaRegresiva = "04/03/2021 21:00:00";
+var fechaCuentaRegresiva = "16/04/2023 12:00:00";
 
 // Set the date we're counting down to
 var countDownDate = new Date(fechaCuentaRegresiva).getTime();
@@ -205,6 +205,7 @@ $(function () {
 			showSlide(-1);
 		}
 	});
+	
 
 	// document.addEventListener(
 	// 	"touchstart",
@@ -216,3 +217,6 @@ $(function () {
 	// 	Modernizr.passiveeventlisteners ? { passive: true } : false
 	// );
 });
+
+
+console.log(fechaCuentaRegresiva);

@@ -71,6 +71,19 @@ body {
 	animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
 }
 
+@media (min-width: 300px) {
+	.imgPortada {
+		background-color: var(--white_paper_up);
+		background-image: url(../img/11.jpg);
+		background-size: contain;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
 @media (min-width: 400px) {
 	.imgPortada {
 		background-color: var(--white_paper_up);
@@ -403,6 +416,7 @@ section p {
 section.galeria .item-galeria {
 	padding: 0 1.5%;
 	margin-bottom: 3%;
+	margin-top: 5px;
 }
 
 .col-6 {
