@@ -12,15 +12,19 @@ if (navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
 }
 
 ////  Cuenta regresiva
-var fechaCuentaRegresiva = "16/04/2023 12:00:00";
+var fechaCuentaRegresiva = "April 16, 2023 12: 00: 00";
+
+
 
 // Set the date we're counting down to
 var countDownDate = new Date(fechaCuentaRegresiva).getTime();
+console.log(countDownDate)
 
 // Update the count down every 1 second
 var x = setInterval(function () {
 	// Get today's date and time
 	var now = new Date().getTime();
+	// console.log(now)
 
 	// Find the distance between now and the count down date
 	var distance = countDownDate - now;
@@ -62,18 +66,18 @@ function confetti() {
 		for (var i = 0; i <= confetticount; i++) {
 			$(this).append(
 				'<span class="particle c' +
-					$.rnd(1, 2, 0) +
-					'" style="top:' +
-					$.rnd(10, 40, 0) +
-					"%; left:" +
-					$.rnd(0, 100, 0) +
-					"%;width: calc(" +
-					$.rnd(0.025, 0.875, 3) +
-					"vw + 8px) ; height: calc(" +
-					$.rnd(0.012, 0.437, 3) +
-					"vw + 5px);animation-delay: " +
-					$.rnd(25, 45, 0) / 10 +
-					's;"></span>'
+				$.rnd(1, 2, 0) +
+				'" style="top:' +
+				$.rnd(10, 40, 0) +
+				"%; left:" +
+				$.rnd(0, 100, 0) +
+				"%;width: calc(" +
+				$.rnd(0.025, 0.875, 3) +
+				"vw + 8px) ; height: calc(" +
+				$.rnd(0.012, 0.437, 3) +
+				"vw + 5px);animation-delay: " +
+				$.rnd(25, 45, 0) / 10 +
+				's;"></span>'
 			);
 		}
 	});
@@ -205,7 +209,7 @@ $(function () {
 			showSlide(-1);
 		}
 	});
-	
+
 
 	// document.addEventListener(
 	// 	"touchstart",
