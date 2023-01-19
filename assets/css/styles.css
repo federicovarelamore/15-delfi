@@ -8,6 +8,17 @@
 	--time-chrome: 9s;
 }
 
+.nombreDelfi{
+	font-family: 'Great Vibes', cursive;
+	font-size: 15em;
+	text-align: center;
+	transition-property: ease;
+	transition-duration: 4s, 2s;
+	
+	
+	
+}
+
 body {
 	width: 100%;
 	margin: 0;
@@ -71,6 +82,19 @@ body {
 	animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
 }
 
+@media (min-width: 280px) {
+	.imgPortada {
+		background-color: var(--white_paper_up);
+		background-image: url(../img/11.jpg);
+		background-size: contain;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
 @media (min-width: 300px) {
 	.imgPortada {
 		background-color: var(--white_paper_up);
@@ -81,6 +105,21 @@ body {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	}
+}
+@media (min-width: 400px) {
+	.imgPortada {
+		background-color: var(--white_paper_up);
+		background-image: url(../img/11.jpg);
+		background-size: contain;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.line{
+		margin-top: 50px;
 	}
 }
 
@@ -121,6 +160,10 @@ body {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		
+	}
+	.line{
+		margin-top: 50px;
 	}
 }
 
