@@ -8,15 +8,14 @@
 	--time-chrome: 9s;
 }
 
-.nombreDelfi{
+.nombreDelfi {
 	font-family: 'Great Vibes', cursive;
 	font-size: 15em;
 	text-align: center;
-	transition-property: ease;
-	transition-duration: 4s, 2s;
-	
-	
-	
+	animation: appear 5s 3s ease-in-out forwards;
+	opacity: 0;
+	padding-bottom: 500px;
+	color: var(--gold);
 }
 
 body {
@@ -28,12 +27,9 @@ body {
 	font-size: 0.4vw;
 	z-index: 0;
 
-	-webkit-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out
-		forwards;
-	-o-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out
-		forwards;
-	-moz-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out
-		forwards;
+	-webkit-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out forwards;
+	-o-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out forwards;
+	-moz-animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out forwards;
 	animation: bodyScroll 0.1s calc(9s - var(--time-chrome)) ease-in-out forwards;
 }
 
@@ -75,8 +71,7 @@ body {
 	-moz-box-shadow: inset 0 -2px 6px -1px black;
 	box-shadow: inset 0 -2px 6px -1px black;
 
-	-webkit-animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out
-		forwards;
+	-webkit-animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
 	-o-animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
 	-moz-animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
 	animation: appear 3s calc(9.5s - var(--time-chrome)) ease-in-out forwards;
@@ -107,6 +102,7 @@ body {
 		background-size: cover;
 	}
 }
+
 @media (min-width: 400px) {
 	.imgPortada {
 		background-color: var(--white_paper_up);
@@ -118,7 +114,8 @@ body {
 		-o-background-size: cover;
 		background-size: cover;
 	}
-	.line{
+
+	.line {
 		margin-top: 50px;
 	}
 }
@@ -160,9 +157,10 @@ body {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		
+
 	}
-	.line{
+
+	.line {
 		margin-top: 50px;
 	}
 }
@@ -252,12 +250,9 @@ body {
 	stroke-dasharray: 6000;
 	stroke-dashoffset: 6000;
 
-	-webkit-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in
-		forwards;
-	-o-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in
-		forwards;
-	-moz-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in
-		forwards;
+	-webkit-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in forwards;
+	-o-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in forwards;
+	-moz-animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in forwards;
 	animation: animate-mavi 3.5s calc(9.3s - var(--time-chrome)) ease-in forwards;
 }
 
@@ -266,14 +261,10 @@ body {
 	stroke-dashoffset: 6000;
 
 	/* 2.5s de diferencia */
-	-webkit-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out
-		forwards;
-	-o-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out
-		forwards;
-	-moz-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out
-		forwards;
-	animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out
-		forwards;
+	-webkit-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out forwards;
+	-o-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out forwards;
+	-moz-animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out forwards;
+	animation: animate-mavi 4.5s calc(11.8s - var(--time-chrome)) ease-out forwards;
 }
 
 #mavi_white {
@@ -288,8 +279,7 @@ body {
 #mis_quinces {
 	opacity: 0;
 
-	-webkit-animation: appear 2.5s calc(12.8s - var(--time-chrome)) ease-out
-		forwards;
+	-webkit-animation: appear 2.5s calc(12.8s - var(--time-chrome)) ease-out forwards;
 	-o-animation: appear 2.5s calc(12.8s - var(--time-chrome)) ease-out forwards;
 	-moz-animation: appear 2.5s calc(12.8s - var(--time-chrome)) ease-out forwards;
 	animation: appear 2.5s calc(12.8s - var(--time-chrome)) ease-out forwards;
@@ -598,6 +588,7 @@ a.active {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -631,9 +622,11 @@ a.active {
 	0% {
 		color: var(--gold);
 	}
+
 	50% {
 		color: var(--gold);
 	}
+
 	100% {
 		color: var(--gray);
 	}
@@ -643,9 +636,11 @@ a.active {
 	0% {
 		color: var(--gold);
 	}
+
 	50% {
 		color: var(--gold);
 	}
+
 	100% {
 		color: #ffffff;
 	}
